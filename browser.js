@@ -11,8 +11,8 @@ const LASTFM_API = 'https://ws.audioscrobbler.com/2.0/';
 
 const ART_FALLBACK = 'data:image/svg+xml,' + encodeURIComponent(`
   <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
-    <rect width="300" height="300" fill="#1f1f25"/>
-    <text x="150" y="165" font-size="80" text-anchor="middle" fill="#3a3a48">♬</text>
+    <rect width="300" height="300" fill="#001500"/>
+    <text x="150" y="165" font-size="80" text-anchor="middle" fill="#006600">♬</text>
   </svg>`);
 
 // ─────────────────────────────────────────────────────────────
