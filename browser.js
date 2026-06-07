@@ -57,7 +57,7 @@ const stickyArtist     = document.getElementById('stickyArtist');
 // ─────────────────────────────────────────────────────────────
 
 async function fetchDir(path) {
-  const url = `${AUDIO_BASE}/${path}`;
+  const url = path ? `${AUDIO_BASE}/${path}/` : `${AUDIO_BASE}/`;
   const res = await fetch(url, { headers: { Accept: 'application/json' } });
   if (!res.ok) throw new Error(`HTTP ${res.status} — ${url}`);
   return res.json();
